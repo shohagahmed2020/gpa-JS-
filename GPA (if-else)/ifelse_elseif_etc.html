@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Java script If else</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+    <script>
+        var result=prompt("Enter Mark");
+        result=parseInt(result);
+        if(result<=100 && result>=80) {
+            document.write("You have obtained A+ (5.00)");
+        }
+        else if(result<=79 && result>=70) {
+            document.write("You obtain A grade (4.00)");
+        }
+        else if(result>=60 && result<=69) {
+            document.write("You have obtained A- (3.5)")
+        }
+
+        else if (result>=50 && result<=59) {
+            document.write("You have obtained B Grade (3.00)");
+        }
+
+        else if (result>=40 && result<=49) {
+            document.write("You have obtained C grade (2.00)");
+        }
+
+        else if (result>=33 && result<=39) {
+            document.write("You have obtained D grade (1.00)");
+        }
+
+        else if (result>=0 && result<=32) {
+            document.write( "<h4 class='f'>Sorry! You have gotten F grade</h4>");
+        }
+        else {
+            document.write("<p style=color:red>Invelid, Please Input correct mark.</p>");
+        }
+    </script>
+    </body>
+</html>
